@@ -95,7 +95,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+header
+{
+  background: url(../img/kevin.png) center #18e2bf;
+  height: 100vh;
+  
+}
 
 
 
