@@ -98,7 +98,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/*KEVIN*/
+/*HEADER FULL SCREEN SIZE DESKTOP VERSION*/
 header {
     background: url(../img/kevin.png) center #18e2bf;
     border-top: 15px solid white;
@@ -167,7 +168,9 @@ header p {
     font-weight: 400;
     font-size: 25px;
 }
+/*END OF THE HEADER FULL SCREEN SIZE DESKTOP VERSION*/
 
+/*FOOTER INDEX.HTML PAGE*/
 footer, .emailSection {
     width: 49%;
     display: inline-block;
@@ -211,8 +214,8 @@ footer span {
 input::placeholder {
     color: #18e2bf;
 }
-
-
+/*END OF THE FOOTER INDEX.HTML PAGE*/
+/*KEVIN*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
