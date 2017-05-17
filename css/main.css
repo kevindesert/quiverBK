@@ -149,6 +149,14 @@ header p
   font-size: 25px;
   font-weight: bold;
 }
+.join
+{
+  border: 22px solid orange;
+  border-radius: 20px;
+  width: 15%;
+  background-color: orange;
+  color: white;
+}
 
 footer, .emailSection
 {
