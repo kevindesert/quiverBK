@@ -95,22 +95,114 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header
+{
+  background: url(../img/kevin.png) center #18e2bf;
+  border: 15px solid white;
+  height: 100vh;
 
+}
+header nav
+{
+  padding-top: 5%;
 
+}
+.hoverLink
+{
+  font-size: 20px;
+}
+nav ul .hoverLink:hover
+{
+  background-color: rgba(0, 0, 0, 0);
+  opacity: .5;
+}
+.signIn
+{
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+  color: #18e2bf;
+  margin: auto;
+}
 
+header h2
+{
+text-align: center;
+  color: white;
+  font-size: 50px;
+  padding-top: 10%;
+  font-weight: bold;
 
+}
+header h3
+{
+  text-align: center;
+  color: white;
+  font-size: 40px;
 
+}
+header p
+{
+  text-align: center;
+  color: white;
+  padding: 2%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.join
+{
+  border: 22px solid orange;
+  border-radius: 20px;
+  width: 15%;
+  background-color: orange;
+  color: white;
+}
 
+footer, .emailSection
+{
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  height: 40vh;
 
+}
+footer
+{
+  background-color: white;
+}
+footer h5
+{
+  font-size: 20px;
+  padding-top: 10%;
+}
 
-
-
-
-
-
-
-
-
+footer li
+{
+padding-top: 3%;
+padding-left: 7%;
+}
+footer li a
+{
+  color: grey;
+}
+footer span
+{
+  color: #18e2bf;
+}
+.emailSection h5
+{
+  color: grey;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 3%;
+}
+#email
+{
+  font-size: 30px;
+}
+input::placeholder {
+  color: #18e2bf;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
