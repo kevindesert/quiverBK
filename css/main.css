@@ -114,7 +114,8 @@ header nav
 nav ul .hoverLink:hover
 {
   background-color: rgba(0, 0, 0, 0);
-  opacity: .5;
+  color: white;
+  opacity: .8;
 }
 .signIn
 {
