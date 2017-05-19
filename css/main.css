@@ -203,6 +203,63 @@ footer span
 input::placeholder {
   color: #18e2bf;
 }
+
+
+
+
+/*-----------------------------Pricing----------------------------------*/
+
+.d-flex{
+  display: flex;
+}
+
+.centercenter{
+  justify-content: center;
+  align-items: center;
+}
+
+.size40{
+  font-size: 40px;
+}
+
+
+.bigone{
+  font-size: 140px;
+}
+
+.pricingdescribe{
+  width: 80%;
+  margin: auto;
+}
+.pricingdescribe li{
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.pricingdescribe h4{
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.pricingdescribe h4 strong{
+  font-size: 22px;
+}
+
+.xl25{
+  margin-right: auto;
+  width: 310px;
+}
+
+.w80{
+  width: 80%;
+}
+
+.headerpricing{
+  padding: 30px 30px;
+  min-height: 330px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
