@@ -203,6 +203,7 @@ input::placeholder {
 
 /*-----------------------------Pricing----------------------------------*/
 
+
 .slider .slides, .slider {
     background-color: white;
 }
@@ -218,6 +219,7 @@ input::placeholder {
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .centercenter {
@@ -238,17 +240,75 @@ input::placeholder {
     margin: auto;
 }
 
-.pricingdescribe li {
-    margin-bottom: 25px;
-    font-size: 16px;
+.free {
+    background-color: #DAE1EB;
+    border: 2px solid #DAE1EB;
+    color: #3B4ECC;
 }
 
-.pricingdescribe h4 {
+.free .size40 a {
+    color: #3B4ECC;
+}
+
+.standard {
+    background-color: #6D98E6;
+    border: 2px solid #6D98E6;
+    color: white;
+}
+
+.plus {
+    background-color: #3B4ECC;
+    border: 2px solid #3B4ECC;
+    color: white;
+}
+
+.entreprise {
+    background-color: #F79E02;
+    border: 2px solid #F79E02;
+    color: white;
+}
+
+.standard .size40 a, .plus .size40 a, .entreprise .size40 a {
+    color: white;
+}
+
+.size40:last-child a {
+    opacity: 0.5;
+    transition: opacity .4s ease-in-out;
+}
+
+.size40:last-child a:hover {
+    opacity: 1;
+}
+
+.pricingdescribe li, .pricingdescribeplus li, .pricingdescribestand li, .pricingdescribeent li {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #91A4BF;
+}
+
+.pricingdescribe h4, .pricingdescribeplus h4, .pricingdescribestand h4, .pricingdescribeent h4 {
     font-size: 16px;
     margin-bottom: 60px;
 }
 
-.pricingdescribe h4 strong {
+.pricingdescribe h4 {
+    color: #91A4BF;
+}
+
+.pricingdescribeplus h4 {
+    color: #6D98E6;
+}
+
+.pricingdescribestand h4 {
+    color: #3B4ECC;
+}
+
+.pricingdescribeent h4 {
+    color: #F79E02;
+}
+
+.pricingdescribe h4 strong, .pricingdescribeplus h4 strong, .pricingdescribestand h4 strong, .pricingdescribeent h4 strong {
     font-size: 22px;
 }
 
@@ -259,11 +319,32 @@ input::placeholder {
 
 .w80 {
     width: 80%;
+    margin-top: 25px;
 }
 
-.headerpricing {
+.headerpricing, .pricingdescribeplus, .pricingdescribestand, .pricingdescribeent {
     padding: 30px 30px;
     min-height: 330px;
+    position: relative;
+}
+
+.free>a:last-child, .standard>a:last-child, .plus>a:last-child, .entreprise>a:last-child {
+    bottom: 5%;
+    left: 26%;
+    position: absolute;
+    border-radius: 30px 30px;
+    padding: 10px 25px;
+}
+
+
+.standard>a, .plus>a, .entreprise>a {
+    border: 2px solid white;
+    color: white;
+}
+
+.free>a {
+    color: #3b4ecc;
+    border: 2px solid #3b4ecc;
 }
 
 .w50 {
@@ -273,12 +354,10 @@ input::placeholder {
 
 @keyframes mainl {
     from {
-        transition: transform .8s;
         transform: rotateZ(0deg);
         -webkit-transform-origin: center right;
     }
     to {
-        transition: transform .8s;
         transform: rotateZ(-9deg);
         -webkit-transform-origin: center right;
     }
@@ -286,26 +365,21 @@ input::placeholder {
 
 @keyframes mainr {
     from {
-        transition: transform .8s;
         transform: rotateZ(0deg);
         transform-origin: center left;
     }
     to {
-        transition: transform .8s;
         transform: rotateZ(9deg);
         transform-origin: center left;
     }
 }
 
-
 @keyframes head {
     from {
-        transition: transform .8s;
         transform: rotateZ(0deg);
         transform-origin: bottom center;
     }
     to {
-        transition: transform .8s;
         transform: rotateZ(-18deg);
         transform-origin: bottom center;
     }
@@ -374,7 +448,38 @@ input::placeholder {
     animation-direction: alternate;
 }
 
+.animcontent section h2 {
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.licontact {
+    padding-top: 40px;
+}
+
+.licontact h5 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.licontact>div {
+    margin-right: 20px;
+}
+
+.licontact a {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 @media (min-width:980px) {
+    .d-flex {
+        flex-wrap: nowrap;
+    }
     .ceaser {
         background-image: url(../img/ceaser.jpg);
         background-repeat: no-repeat;
@@ -409,6 +514,52 @@ input::placeholder {
         font-weight: normal;
         font-size: 19px;
         line-height: 28px;
+    }
+    .free>a:last-child, .standard>a:last-child, .plus>a:last-child{
+      visibility: hidden;
+    }
+
+    .pricingtable  .free:hover > a,.pricingtable .standard:hover>a,.pricingtable .plus:hover>a{
+      visibility: visible;
+    }
+    .pricingtable  .free > a:hover{
+      transition: background-color 0.5s;
+      background-color: #3B4ECC;
+      color: white;
+    }
+    .pricingtable .standard>a:hover,.pricingtable .plus>a:hover{
+      transition: background-color 0.5s;
+      background-color: white;
+    }
+    .pricingtable .standard>a:hover{
+      color: #6D98E6;
+    }
+    .pricingtable .plus>a:hover{
+      color: #3B4ECC;
+    }
+    .pricingtable .entreprise>a:hover{
+      transition: background-color 0.5s;
+      color: #F79E02;
+      background-color: white;
+    }
+    .pricingtable{
+      border: 3px solid transparent;
+      transition: border 1s;
+    }
+    .freep:hover{
+      border: 3px solid #dae1eb;
+    }
+
+    .standp:hover {
+      border: 3px solid #7CB8E9;
+    }
+
+    .plusp:hover{
+      border: 3px solid #3B4ECC;
+    }
+
+    .entp:hover{
+      border: 3px solid #F79E02;
     }
 }
 
