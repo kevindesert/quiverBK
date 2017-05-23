@@ -99,9 +99,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    border: 15px solid white;
+}
+
 header {
     background: url(../img/kevin.png) center #18e2bf;
-    border: 15px solid white;
     height: 100vh;
 }
 
@@ -203,6 +206,31 @@ input::placeholder {
 
 /*-----------------------------Pricing----------------------------------*/
 
+
+/*------------------------------header ---------------------------------*/
+
+.pricingheader {
+    background: inherit;
+    background-image: linear-gradient(#4157E7, #41D5E7);
+    background-size: 100vh;
+}
+
+.pricingheader h2 {
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 90px;
+}
+
+.pricingheader p {
+    text-align: inherit;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.whitecolor {
+    color: white;
+}
 
 .slider .slides, .slider {
     background-color: white;
@@ -335,7 +363,6 @@ input::placeholder {
     border-radius: 30px 30px;
     padding: 10px 25px;
 }
-
 
 .standard>a, .plus>a, .entreprise>a {
     border: 2px solid white;
@@ -476,7 +503,83 @@ input::placeholder {
     line-height: 20px;
 }
 
+@keyframes Up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 150px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.opacity0{
+  opacity: 0;
+}
+
+.Up {
+  opacity: 0;
+  animation-name: Up;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Up1 {
+  opacity: 0;
+  animation-name: Up;
+  animation-duration: 2.2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Up2 {
+  opacity: 0;
+  animation-name: Up;
+  animation-duration: 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Up3 {
+  opacity: 0;
+  animation-name: Up;
+  animation-duration: 2.8s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.opacity{
+  animation-name: opacity;
+  animation-duration: 0.1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.opacity1{
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 @media (min-width:980px) {
+    .pricingrelative {
+        position: relative;
+        top: -250px;
+    }
     .d-flex {
         flex-wrap: nowrap;
     }
@@ -515,51 +618,54 @@ input::placeholder {
         font-size: 19px;
         line-height: 28px;
     }
-    .free>a:last-child, .standard>a:last-child, .plus>a:last-child{
-      visibility: hidden;
+    .free>a:last-child, .standard>a:last-child, .plus>a:last-child {
+        opacity: 0;
+        transition:opacity 1s ease-in-out;
     }
-
-    .pricingtable  .free:hover > a,.pricingtable .standard:hover>a,.pricingtable .plus:hover>a{
-      visibility: visible;
+    .hoverup{
+      transition :1s;
     }
-    .pricingtable  .free > a:hover{
-      transition: background-color 0.5s;
-      background-color: #3B4ECC;
-      color: white;
+    .headerpricing:hover .hoverup {
+        transform:translate3d(0, -15px, 0);
     }
-    .pricingtable .standard>a:hover,.pricingtable .plus>a:hover{
-      transition: background-color 0.5s;
-      background-color: white;
+    .pricingtable .free:hover>a, .pricingtable .standard:hover>a, .pricingtable .plus:hover>a {
+        opacity: 1;
     }
-    .pricingtable .standard>a:hover{
-      color: #6D98E6;
+    .pricingtable .free>a:hover {
+        transition: background-color 0.5s;
+        background-color: #3B4ECC;
+        color: white;
     }
-    .pricingtable .plus>a:hover{
-      color: #3B4ECC;
+    .pricingtable .standard>a:hover, .pricingtable .plus>a:hover {
+        transition: background-color 0.5s;
+        background-color: white;
     }
-    .pricingtable .entreprise>a:hover{
-      transition: background-color 0.5s;
-      color: #F79E02;
-      background-color: white;
+    .pricingtable .standard>a:hover {
+        color: #6D98E6;
     }
-    .pricingtable{
-      border: 3px solid transparent;
-      transition: border 1s;
+    .pricingtable .plus>a:hover {
+        color: #3B4ECC;
     }
-    .freep:hover{
-      border: 3px solid #dae1eb;
+    .pricingtable .entreprise>a:hover {
+        transition: background-color 0.5s;
+        color: #F79E02;
+        background-color: white;
     }
-
+    .pricingtable {
+        border: 3px solid transparent;
+        transition: border 1s;
+    }
+    .freep:hover {
+        border: 3px solid #dae1eb;
+    }
     .standp:hover {
-      border: 3px solid #7CB8E9;
+        border: 3px solid #7CB8E9;
     }
-
-    .plusp:hover{
-      border: 3px solid #3B4ECC;
+    .plusp:hover {
+        border: 3px solid #3B4ECC;
     }
-
-    .entp:hover{
-      border: 3px solid #F79E02;
+    .entp:hover {
+        border: 3px solid #F79E02;
     }
 }
 
