@@ -3418,6 +3418,13 @@ nav ul a span.badge {
   right: auto;
 }
 
+.row .col.s25 {
+  width: 20%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
 .row .col.s3 {
   width: 25%;
   margin-left: auto;
@@ -3645,6 +3652,12 @@ nav ul a span.badge {
     left: auto;
     right: auto;
   }
+  .row .col.m25 {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
   .row .col.m3 {
     width: 25%;
     margin-left: auto;
@@ -3828,6 +3841,12 @@ nav ul a span.badge {
     left: auto;
     right: auto;
   }
+  .row .col.l25 {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
   .row .col.l3 {
     width: 25%;
     margin-left: auto;
@@ -4007,6 +4026,12 @@ nav ul a span.badge {
   }
   .row .col.xl2 {
     width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xl25 {
+    width: 20%;
     margin-left: auto;
     left: auto;
     right: auto;
@@ -7880,7 +7905,7 @@ input[type=range]:focus::-ms-fill-upper {
 .slider .slides {
   background-color: #9e9e9e;
   margin: 0;
-  height: 400px;
+  height: 500px;
 }
 
 .slider .slides li {
