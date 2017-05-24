@@ -3,3 +3,9 @@
             full_width: true
         });
     });
+
+
+
+    $(document).ready(function() {
+        $('.scrollspy').scrollSpy();
+    });

@@ -46,7 +46,6 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -213,6 +212,11 @@ input::placeholder {
     background: inherit;
     background-image: linear-gradient(#4157E7, #41D5E7);
     background-size: 100vh;
+}
+
+.row .pricingtable {
+    padding: 0;
+    margin: 1.5rem;
 }
 
 .pricingheader h2 {
@@ -504,75 +508,171 @@ input::placeholder {
 }
 
 @keyframes Up {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 150px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+    from {
+        opacity: 0;
+        transform: translate3d(0, 150px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.opacity0{
-  opacity: 0;
+.opacity0 {
+    opacity: 0;
 }
 
 .Up {
-  opacity: 0;
-  animation-name: Up;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .Up1 {
-  opacity: 0;
-  animation-name: Up;
-  animation-duration: 2.2s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .Up2 {
-  opacity: 0;
-  animation-name: Up;
-  animation-duration: 2.5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .Up3 {
-  opacity: 0;
-  animation-name: Up;
-  animation-duration: 2.8s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
-.opacity{
-  animation-name: opacity;
-  animation-duration: 0.1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+.opacity {
+    animation-name: opacity;
+    animation-duration: 0.1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-.opacity1{
-  animation-name: opacity;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
+.opacity1 {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.mainsticky, .asidesticky {
+    position: sticky;
+    top: 0;
+}
+
+.asidesticky {
+    margin-top: 30px;
+}
+
+.asidesticky h2 {
+    color: #18e2bf;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    width: 50%;
+    margin: auto;
+}
+
+.asidesticky ul {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.asidesticky ul li {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.asidesticky ul li a {
+    padding: 10px;
+    border-radius: 30px 30px;
+}
+
+.sectionsticky ul li {
+    padding: 30px 20px;
+    border-bottom: 2px solid #eaeeef;
+}
+
+.sectionsticky ul li a {
+    color: black;
+}
+
+.sectionsticky {
+    margin-top: 70px;
+}
+
+.sectionsticky h2 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #18e2bf;
+    padding-bottom: 20px;
+}
+
+.sectionsticky article {
+    padding-bottom: 160px;
+}
+
+.table-of-contents a{
+  height: inherit;
+}
+
+.asidesticky .table-of-contents a.active , .asidesticky .table-of-contents a:hover{
+    color: #18e2bf;
+    border-left: 0;
+    border: 2px solid #18e2bf;
+}
+
+@keyframes borderbot {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+.aborderwith a{
+  color: #F09BAD;
+  padding-bottom: 2px;
+}
+
+hr{
+  margin: 0;
+}
+.aborderwith a:hover hr{
+  color: #F09BAD;
+  background-color: #F09BAD;
+  animation-name: borderbot;
+  animation-duration: 2s;
+  animation-direction: alternate;
 }
 
 @media (min-width:980px) {
@@ -620,13 +720,13 @@ input::placeholder {
     }
     .free>a:last-child, .standard>a:last-child, .plus>a:last-child {
         opacity: 0;
-        transition:opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
     }
-    .hoverup{
-      transition :1s;
+    .hoverup {
+        transition: 1s;
     }
     .headerpricing:hover .hoverup {
-        transform:translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
     }
     .pricingtable .free:hover>a, .pricingtable .standard:hover>a, .pricingtable .plus:hover>a {
         opacity: 1;
