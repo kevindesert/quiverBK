@@ -389,7 +389,7 @@ input::placeholder {
         -webkit-transform-origin: center right;
     }
     to {
-        transform: rotateZ(-9deg);
+        transform: rotateZ(-18deg);
         -webkit-transform-origin: center right;
     }
 }
@@ -400,7 +400,7 @@ input::placeholder {
         transform-origin: center left;
     }
     to {
-        transform: rotateZ(9deg);
+        transform: rotateZ(18deg);
         transform-origin: center left;
     }
 }
@@ -411,7 +411,7 @@ input::placeholder {
         transform-origin: bottom center;
     }
     to {
-        transform: rotateZ(-18deg);
+        transform: rotateZ(-360deg);
         transform-origin: bottom center;
     }
 }
@@ -447,7 +447,7 @@ input::placeholder {
     height: 64px;
     top: 220px;
     left: 11px;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-name: mainl;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -460,7 +460,7 @@ input::placeholder {
     height: 64px;
     top: 219px;
     right: 12px;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-name: mainr;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -473,7 +473,7 @@ input::placeholder {
     height: 195px;
     top: 2px;
     left: 249px;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-name: head;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -654,8 +654,11 @@ input::placeholder {
     from {
       width: 0;
     }
-    to {
+    50% {
       width: 100%;
+    }
+    to{
+      width: 0;
     }
 }
 
