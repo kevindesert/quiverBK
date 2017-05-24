@@ -98,12 +98,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-    border: 15px solid white;
-}
-
+/*KEVIN*/
+/*HEADER FULL SCREEN SIZE DESKTOP VERSION*/
 header {
     background: url(../img/kevin.png) center #18e2bf;
+    border-top: 15px solid white;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
     height: 100vh;
 }
 
@@ -111,18 +112,14 @@ header nav {
     padding-top: 5%;
 }
 
-nav ul .hoverLink:hover
-{
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  opacity: .8;
-
-
 .hoverLink {
     font-size: 20px;
-
 }
 
+nav ul .hoverLink:hover {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .5;
+}
 
 .signIn {
     border: 1px solid white;
@@ -161,6 +158,25 @@ header p {
     background-color: orange;
     color: white;
 }
+
+.pressed {
+    font-size: 35px;
+  font-weight: 300;
+}
+
+.weAre {
+    font-weight: 400;
+    font-size: 25px;
+}
+/*END OF THE HEADER FULL SCREEN SIZE DESKTOP VERSION*/
+
+/*FOOTER INDEX.HTML PAGE*/
+
+
+body {
+    border: 15px solid white;
+}
+
 
 footer, .emailSection {
     width: 49%;
@@ -204,6 +220,10 @@ footer span {
 
 input::placeholder {
     color: #18e2bf;
+
+}
+/*END OF THE FOOTER INDEX.HTML PAGE*/
+/*KEVIN*/
 }
 
 
@@ -787,6 +807,7 @@ hr{
         border: 3px solid #F79E02;
     }
 }
+
 
 
 /* ==========================================================================
