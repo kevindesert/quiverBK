@@ -46,7 +46,6 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -98,6 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /*KEVIN*/
 /*HEADER FULL SCREEN SIZE DESKTOP VERSION*/
 header {
@@ -171,6 +171,13 @@ header p {
 /*END OF THE HEADER FULL SCREEN SIZE DESKTOP VERSION*/
 
 /*FOOTER INDEX.HTML PAGE*/
+
+
+body {
+    border: 15px solid white;
+}
+
+
 footer, .emailSection {
     width: 49%;
     display: inline-block;
@@ -213,9 +220,596 @@ footer span {
 
 input::placeholder {
     color: #18e2bf;
+
 }
 /*END OF THE FOOTER INDEX.HTML PAGE*/
 /*KEVIN*/
+}
+
+
+/*-----------------------------Pricing----------------------------------*/
+
+
+/*------------------------------header ---------------------------------*/
+
+.opacity03{
+  opacity: 0.3;
+}
+
+.opacity02{
+  opacity: 0.2;
+}
+
+.opacity01{
+  opacity: 0.1;
+}
+
+.pricingheader {
+    background: inherit;
+    background-image: linear-gradient(#4157E7, #41D5E7);
+    background-size: 100vh;
+}
+
+.row .pricingtable {
+    padding: 0;
+    margin: 1.5rem;
+}
+
+.pricingheader h2 {
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 90px;
+}
+
+.pricingheader p {
+    text-align: inherit;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.whitecolor {
+    color: white;
+}
+
+.slider .slides, .slider {
+    background-color: white;
+}
+
+.redgrad {
+    background-image: linear-gradient(#FA3267, #F33F3E);
+}
+
+.ma {
+    margin: auto;
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centercenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.bigone {
+    font-size: 140px;
+}
+
+.pricingdescribe {
+    width: 80%;
+    margin: auto;
+}
+
+.free {
+    background-color: #DAE1EB;
+    border: 2px solid #DAE1EB;
+    color: #3B4ECC;
+}
+
+.free .size40 a {
+    color: #3B4ECC;
+}
+
+.standard {
+    background-color: #6D98E6;
+    border: 2px solid #6D98E6;
+    color: white;
+}
+
+.plus {
+    background-color: #3B4ECC;
+    border: 2px solid #3B4ECC;
+    color: white;
+}
+
+.entreprise {
+    background-color: #F79E02;
+    border: 2px solid #F79E02;
+    color: white;
+}
+
+.standard .size40 a, .plus .size40 a, .entreprise .size40 a {
+    color: white;
+}
+
+.size40:last-child a {
+    opacity: 0.5;
+    transition: opacity .4s ease-in-out;
+}
+
+.size40:last-child a:hover {
+    opacity: 1;
+}
+
+.pricingdescribe li, .pricingdescribeplus li, .pricingdescribestand li, .pricingdescribeent li {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #91A4BF;
+}
+
+.pricingdescribe h4, .pricingdescribeplus h4, .pricingdescribestand h4, .pricingdescribeent h4 {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.pricingdescribe h4 {
+    color: #91A4BF;
+}
+
+.pricingdescribeplus h4 {
+    color: #6D98E6;
+}
+
+.pricingdescribestand h4 {
+    color: #3B4ECC;
+}
+
+.pricingdescribeent h4 {
+    color: #F79E02;
+}
+
+.pricingdescribe h4 strong, .pricingdescribeplus h4 strong, .pricingdescribestand h4 strong, .pricingdescribeent h4 strong {
+    font-size: 22px;
+}
+
+.xl25 {
+    margin-right: auto;
+    width: 310px;
+}
+
+.w80 {
+    width: 80%;
+    margin-top: 25px;
+}
+
+.headerpricing, .pricingdescribeplus, .pricingdescribestand, .pricingdescribeent {
+    padding: 30px 30px;
+    min-height: 330px;
+    position: relative;
+}
+
+.free>a:last-child, .standard>a:last-child, .plus>a:last-child, .entreprise>a:last-child {
+    bottom: 5%;
+    left: 26%;
+    position: absolute;
+    border-radius: 30px 30px;
+    padding: 10px 25px;
+}
+
+.standard>a, .plus>a, .entreprise>a {
+    border: 2px solid white;
+    color: white;
+}
+
+.free>a {
+    color: #3b4ecc;
+    border: 2px solid #3b4ecc;
+}
+
+.w50 {
+    width: 50%;
+    font-size: 25px;
+}
+
+@keyframes mainl {
+    from {
+        transform: rotateZ(0deg);
+        -webkit-transform-origin: center right;
+    }
+    to {
+        transform: rotateZ(-18deg);
+        -webkit-transform-origin: center right;
+    }
+}
+
+@keyframes mainr {
+    from {
+        transform: rotateZ(0deg);
+        transform-origin: center left;
+    }
+    to {
+        transform: rotateZ(18deg);
+        transform-origin: center left;
+    }
+}
+
+@keyframes head {
+    from {
+        transform: rotateZ(0deg);
+        transform-origin: bottom center;
+    }
+    to {
+        transform: rotateZ(-360deg);
+        transform-origin: bottom center;
+    }
+}
+
+.kingbody {
+    position: relative;
+    height: 400px;
+}
+
+.king {
+    position: absolute;
+    display: block;
+    width: 650px;
+    min-width: 650px;
+    height: 390px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.body {
+    background: transparent url('../img/good_causes-body.svg') no-repeat center;
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    top: 28px;
+    left: 142px;
+}
+
+.larm {
+    background: transparent url('../img/good_causes-left_arm.svg') no-repeat center;
+    position: absolute;
+    width: 257px;
+    height: 64px;
+    top: 220px;
+    left: 11px;
+    animation-duration: 3s;
+    animation-name: mainl;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.rarm {
+    background: transparent url('../img/good_causes-right_arm.svg') no-repeat center;
+    position: absolute;
+    width: 257px;
+    height: 64px;
+    top: 219px;
+    right: 12px;
+    animation-duration: 3s;
+    animation-name: mainr;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.head {
+    background: transparent url('../img/good_causes-head.svg') no-repeat center;
+    position: absolute;
+    width: 151px;
+    height: 195px;
+    top: 2px;
+    left: 249px;
+    animation-duration: 3s;
+    animation-name: head;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.animcontent section h2 {
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.licontact {
+    padding-top: 40px;
+}
+
+.licontact h5 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.licontact>div {
+    margin-right: 20px;
+}
+
+.licontact a {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+@keyframes Up {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 150px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.Up {
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Up1 {
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Up2 {
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.Up3 {
+    opacity: 0;
+    animation-name: Up;
+    animation-duration: 2.8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.opacity {
+    animation-name: opacity;
+    animation-duration: 0.1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.opacity1 {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.mainsticky, .asidesticky {
+    position: sticky;
+    top: 0;
+}
+
+.asidesticky {
+    margin-top: 30px;
+}
+
+.asidesticky h2 {
+    color: #18e2bf;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    width: 50%;
+    margin: auto;
+}
+
+.asidesticky ul {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.asidesticky ul li {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.asidesticky ul li a {
+    padding: 10px;
+    border-radius: 30px 30px;
+}
+
+.sectionsticky ul li {
+    padding: 30px 20px;
+    border-bottom: 2px solid #eaeeef;
+}
+
+.sectionsticky ul li a {
+    color: black;
+}
+
+.sectionsticky {
+    margin-top: 70px;
+}
+
+.sectionsticky h2 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #18e2bf;
+    padding-bottom: 20px;
+}
+
+.sectionsticky article {
+    padding-bottom: 160px;
+}
+
+.table-of-contents a{
+  height: inherit;
+}
+
+.asidesticky .table-of-contents a.active , .asidesticky .table-of-contents a:hover{
+    color: #18e2bf;
+    border-left: 0;
+    border: 2px solid #18e2bf;
+}
+
+@keyframes borderbot {
+    from {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    to{
+      width: 0;
+    }
+}
+
+.aborderwith a{
+  color: #F09BAD;
+  padding-bottom: 2px;
+}
+
+hr{
+  margin: 0;
+}
+.aborderwith a:hover hr{
+  color: #F09BAD;
+  background-color: #F09BAD;
+  animation-name: borderbot;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+@media (min-width:980px) {
+    .pricingrelative {
+        position: relative;
+        top: -250px;
+    }
+    .d-flex {
+        flex-wrap: nowrap;
+    }
+    .ceaser {
+        background-image: url(../img/ceaser.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ceaser, .redgrad {
+        height: 900px;
+        min-height: 900px;
+    }
+    .ceaser h3 {
+        font-size: 70px;
+        max-width: 600px;
+        color: white;
+    }
+    .redgrad {
+        display: flex;
+        justify-content: center;
+    }
+    .redgrad .col.l7 {
+        margin-left: 0;
+        color: white;
+    }
+    .redgrad .col.l7 h3 {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .redgrad .col.l7 p {
+        padding-bottom: 30px;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 28px;
+    }
+    .free>a:last-child, .standard>a:last-child, .plus>a:last-child {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .hoverup {
+        transition: 1s;
+    }
+    .headerpricing:hover .hoverup {
+        transform: translate3d(0, -15px, 0);
+    }
+    .pricingtable .free:hover>a, .pricingtable .standard:hover>a, .pricingtable .plus:hover>a {
+        opacity: 1;
+    }
+    .pricingtable .free>a:hover {
+        transition: background-color 0.5s;
+        background-color: #3B4ECC;
+        color: white;
+    }
+    .pricingtable .standard>a:hover, .pricingtable .plus>a:hover {
+        transition: background-color 0.5s;
+        background-color: white;
+    }
+    .pricingtable .standard>a:hover {
+        color: #6D98E6;
+    }
+    .pricingtable .plus>a:hover {
+        color: #3B4ECC;
+    }
+    .pricingtable .entreprise>a:hover {
+        transition: background-color 0.5s;
+        color: #F79E02;
+        background-color: white;
+    }
+    .pricingtable {
+        border: 3px solid transparent;
+        transition: border 1s;
+    }
+    .freep:hover {
+        border: 3px solid #dae1eb;
+    }
+    .standp:hover {
+        border: 3px solid #7CB8E9;
+    }
+    .plusp:hover {
+        border: 3px solid #3B4ECC;
+    }
+    .entp:hover {
+        border: 3px solid #F79E02;
+    }
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
