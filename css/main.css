@@ -111,14 +111,18 @@ header nav {
     padding-top: 5%;
 }
 
+nav ul .hoverLink:hover
+{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  opacity: .8;
+
+
 .hoverLink {
     font-size: 20px;
+
 }
 
-nav ul .hoverLink:hover {
-    background-color: rgba(0, 0, 0, 0);
-    opacity: .5;
-}
 
 .signIn {
     border: 1px solid white;
