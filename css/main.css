@@ -208,6 +208,18 @@ input::placeholder {
 
 /*------------------------------header ---------------------------------*/
 
+.opacity03{
+  opacity: 0.3;
+}
+
+.opacity02{
+  opacity: 0.2;
+}
+
+.opacity01{
+  opacity: 0.1;
+}
+
 .pricingheader {
     background: inherit;
     background-image: linear-gradient(#4157E7, #41D5E7);
